@@ -1,0 +1,11 @@
+<h2>Rate Driver</h2>
+
+<label>Stars:</label>
+<select [(ngModel)]="stars">
+  <option *ngFor="let s of [1,2,3,4,5]" [value]="s">{{ s }}</option>
+</select>
+
+<label>Review:</label>
+<textarea [(ngModel)]="review"></textarea>
+
+<button (click)="submitRating()">Submit</button>

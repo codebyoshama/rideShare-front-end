@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()">
+  <label>Origin:</label>
+  <input [(ngModel)]="ride.origin" name="origin" required />
+
+  <label>Destination:</label>
+  <input [(ngModel)]="ride.destination" name="destination" required />
+
+  <label>Date:</label>
+  <input type="date" [(ngModel)]="ride.date" name="date" required />
+
+  <label>Available Seats:</label>
+  <input type="number" [(ngModel)]="ride.availableSeats" name="availableSeats" min="1" required />
+
+  <button type="submit">{{ isEdit ? 'Update' : 'Create' }} Ride</button>
+</form>

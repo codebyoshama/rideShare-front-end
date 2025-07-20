@@ -1,0 +1,22 @@
+<h2>My Offered Rides</h2>
+<ul>
+  <li *ngFor="let ride of rides">
+    {{ ride.origin }} to {{ ride.destination }} - {{ ride.availableSeats }} seats left
+  </li>
+</ul>
+
+<h2>Bookings for My Rides</h2>
+<ul>
+  <li *ngFor="let booking of bookings">
+    Passenger: {{ booking.passenger.fullName }} | Ride to {{ booking.ride.destination }} | Seats: {{ booking.numberOfSeats }}
+  </li>
+</ul>
+
+
+<ul>
+  <li *ngFor="let ride of rides">
+    {{ ride.origin }} to {{ ride.destination }} - {{ ride.availableSeats }} seats left
+    <button (click)="deleteRide(ride.id)">Delete</button>
+    <a [routerLink]="['/rides/ride/edit', ride.id]">Edit</a>
+  </li>
+</ul>
