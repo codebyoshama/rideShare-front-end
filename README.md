@@ -25,3 +25,35 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+This is the Angular-based frontend for a RideShare application, inspired by platforms like BlaBlaCar. It connects with the backend API to enable users to search, offer, and book rides in a responsive and user-friendly interface.
+
+✨ Features
+🔐 User authentication (login/register with JWT support)
+
+🧳 Ride creation, search, and booking workflows
+
+👤 Driver and passenger dashboards
+
+⭐ Ratings and reviews
+
+📱 Responsive UI for both desktop and mobile views
+
+🧭 Angular Routing for seamless navigation
+
+♻️ Reusable components with a modular folder structure
+
+🛠️ Tech Stack
+Angular 16+
+
+TypeScript
+
+Angular Router
+
+RxJS
+
+Bootstrap/Tailwind (or whichever you’re using)
+
+REST API Integration with Spring Boot backend
